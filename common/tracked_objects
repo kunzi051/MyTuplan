@@ -1,0 +1,15 @@
+class TrackedObjects(OrientedBox):
+    def __init__(
+        self,
+        # Timestamp of this object in micro seconds
+        # need
+        timestamp_us: int,
+        # Human understandable id of the object
+        # need
+        track_id: Optional[int],
+        tracked_object_type: TrackedObjectType,
+        oriented_box: OrientedBox, # 包含了位置
+        velocity: StateVector2D,
+        acceleration: StateVector2D
+    ):
+
